@@ -1,0 +1,6 @@
+# ninja log v5
+2	415	7088776898073892	CMakeFiles/LearnVulkan.dir/main.cpp.obj	d4148b4bec3a8a58
+0	79	7088777389943364	build.ninja	bac1b4067a585094
+2	98	7088776111300805	LearnVulkan.exe	f35a078041c49900
+2	413	7088777405307300	CMakeFiles/LearnVulkan.dir/main.cpp.obj	846fe7eb7b6020a9
+413	510	7088777406253743	LearnVulkan.exe	4a3dafa8f2e1543e
