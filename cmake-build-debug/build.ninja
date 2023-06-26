@@ -41,39 +41,39 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/C++/LearnVulkan/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target LearnVulkan
+# Object build statements for EXECUTABLE target Drawing_a_triangle
 
 
 #############################################
-# Order-only phony target for LearnVulkan
+# Order-only phony target for Drawing_a_triangle
 
-build cmake_object_order_depends_target_LearnVulkan: phony || CMakeFiles/LearnVulkan.dir
+build cmake_object_order_depends_target_Drawing_a_triangle: phony || CMakeFiles/Drawing_a_triangle.dir
 
-build CMakeFiles/LearnVulkan.dir/main.cpp.obj: CXX_COMPILER__LearnVulkan_Debug D$:/C++/LearnVulkan/main.cpp || cmake_object_order_depends_target_LearnVulkan
-  DEP_FILE = CMakeFiles\LearnVulkan.dir\main.cpp.obj.d
+build CMakeFiles/Drawing_a_triangle.dir/src/Drawing_a_triangle.cpp.obj: CXX_COMPILER__Drawing_a_triangle_Debug D$:/C++/LearnVulkan/src/Drawing_a_triangle.cpp || cmake_object_order_depends_target_Drawing_a_triangle
+  DEP_FILE = CMakeFiles\Drawing_a_triangle.dir\src\Drawing_a_triangle.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/VulkanSDK/1.3.250.0/Include -IC:/openGL/include
-  OBJECT_DIR = CMakeFiles\LearnVulkan.dir
-  OBJECT_FILE_DIR = CMakeFiles\LearnVulkan.dir
+  OBJECT_DIR = CMakeFiles\Drawing_a_triangle.dir
+  OBJECT_FILE_DIR = CMakeFiles\Drawing_a_triangle.dir\src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target LearnVulkan
+# Link build statements for EXECUTABLE target Drawing_a_triangle
 
 
 #############################################
-# Link the executable LearnVulkan.exe
+# Link the executable D:\C++\LearnVulkan\bin\Drawing_a_triangle.exe
 
-build LearnVulkan.exe: CXX_EXECUTABLE_LINKER__LearnVulkan_Debug CMakeFiles/LearnVulkan.dir/main.cpp.obj
+build D$:/C++/LearnVulkan/bin/Drawing_a_triangle.exe: CXX_EXECUTABLE_LINKER__Drawing_a_triangle_Debug CMakeFiles/Drawing_a_triangle.dir/src/Drawing_a_triangle.cpp.obj
   FLAGS = -g
-  LINK_LIBRARIES = -lvulkan-1  -Wl,-Bstatic  -lglfw3  -Wl,-Bdynamic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lvulkan-1  -lglfw3  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LC:/VulkanSDK/1.3.250.0/Lib   -LC:/openGL/lib
-  OBJECT_DIR = CMakeFiles\LearnVulkan.dir
+  OBJECT_DIR = CMakeFiles\Drawing_a_triangle.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = LearnVulkan.exe
-  TARGET_IMPLIB = libLearnVulkan.dll.a
-  TARGET_PDB = LearnVulkan.exe.dbg
+  TARGET_FILE = D:\C++\LearnVulkan\bin\Drawing_a_triangle.exe
+  TARGET_IMPLIB = D:\C++\LearnVulkan\bin\libDrawing_a_triangle.dll.a
+  TARGET_PDB = Drawing_a_triangle.exe.dbg
 
 
 #############################################
@@ -101,7 +101,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build LearnVulkan: phony LearnVulkan.exe
+build Drawing_a_triangle: phony D$:/C++/LearnVulkan/bin/Drawing_a_triangle.exe
+
+build Drawing_a_triangle.exe: phony D$:/C++/LearnVulkan/bin/Drawing_a_triangle.exe
 
 # =============================================================================
 # Folder targets.
@@ -111,7 +113,7 @@ build LearnVulkan: phony LearnVulkan.exe
 #############################################
 # Folder: D:/C++/LearnVulkan/cmake-build-debug
 
-build all: phony LearnVulkan.exe
+build all: phony D$:/C++/LearnVulkan/bin/Drawing_a_triangle.exe
 
 # =============================================================================
 # Built-in targets
