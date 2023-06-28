@@ -389,8 +389,8 @@ private:
     }
 
     void createGraphicsPipeline() {
-        auto vertShaderCode = readFile("../shaders/vert.spv");
-        auto fragShaderCode = readFile("../shaders/frag.spv");
+        auto vertShaderCode = readFile("D:\\C++\\LearnVulkan\\shaders\\vert.spv");
+        auto fragShaderCode = readFile("D:\\C++\\LearnVulkan\\shaders\\frag.spv");
 
         VkShaderModule vertShaderModule = createShaderModule(vertShaderCode);
         VkShaderModule fragShaderModule = createShaderModule(fragShaderCode);
@@ -659,6 +659,8 @@ private:
         vkEnumerateInstanceLayerProperties(&layerCount, availableLayers.data());
 
         for(const char* layerName : validationLayers) {
+            std::cout << layerName << std::endl;
+
             bool layerFound = false;
 
             for(const auto& layerProperties : availableLayers) {
